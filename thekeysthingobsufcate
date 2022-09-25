@@ -1,0 +1,13 @@
+_G.Key = ""
+userkey = "" -- link to the keys
+blacklist = "" -- bans
+key = game:HttpGet(userkey, true)
+banned = game:HttpGet(blacklist, true)
+plr = game.Players.LocalPlayer
+-- find data base
+if string.find(key,_G.Key) then
+    --script
+    print("hi")
+else
+plr:kick("Shinobu secuirty, invalid key!")
+end
